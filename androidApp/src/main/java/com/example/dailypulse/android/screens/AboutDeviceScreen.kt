@@ -1,6 +1,5 @@
-package com.example.dailypulse.android
+package com.example.dailypulse.android.screens
 
-import android.widget.Toolbar
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
