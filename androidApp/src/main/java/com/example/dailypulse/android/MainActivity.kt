@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.dailypulse.Platform
 import com.example.dailypulse.android.screens.AboutScreen
+import com.example.dailypulse.android.screens.AppScaffold
 import com.example.dailypulse.android.screens.ArticleScreen
 import com.example.dailypulse.articles.ArticlesViewModel
 
@@ -28,22 +29,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ArticleScreen( articlesViewModel = articlesViewModel)
+                    AppScaffold( articlesViewModel = articlesViewModel)
                 }
             }
-        }
-    }
-}
-
-@Preview
-@Composable
-fun DefaultPreview() {
-    MyApplicationTheme {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colorScheme.background
-        ) {
-            AboutScreen()
         }
     }
 }
